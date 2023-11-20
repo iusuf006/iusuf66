@@ -1,0 +1,31 @@
+/* Резиновая верстка % vh, vw */
+.container {
+   width: 100%;
+  height: 100vh;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+
+.block {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  background-color: aqua;
+}
+/* @media screen- это один из типов медиа-запросов в CSS, коьорый применяется к экранам (компьютерным мониторам и ноутбукам и.т.д. */
+/* print это тип медиа-запроса применяется при печати веб страницы */
+/* all это тип медиа-запроса применяется ко всем типам устройств. Он используется как стандартный медиа запрос,когда мы не хотим ограничевать стили ни для одного конкретного типа устройства */
+
+/* @media screen and (max-width: 1024px){
+     .block{
+        background-color: yellow;
+     }
+}  */
+
+ @media all and (min-width:768px){
+    .block{
+        background-color: red;
+    }
+} 
+
+/* Отзывчивая верстка это использование резиновой и адаптивной верстки */
